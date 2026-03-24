@@ -1,0 +1,26 @@
+name: Hello World Workflow
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  say-hi-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hi
+        run: echo "Hello, world!"
+      - name: Say List the Files
+        run: ls
+      - name: Show the location
+        run: pwd 
+  Job-test:
+    needs: say-hi-job
+    runs-on: ubuntu-latest
+    steps:
+      - name: list the folder
+        run:  ls -ltr   
+      - name: create a directory
+        run:  mkdir testfolder
+      - name: list the folder
+        run:  ls -ltr           
+      
