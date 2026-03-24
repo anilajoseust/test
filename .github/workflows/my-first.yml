@@ -11,4 +11,14 @@ jobs:
       - name: Say List the Files
         run: ls
       - name: Show the location
-        run: pwd  
+        run: pwd 
+  Job-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: list the folder
+        run:  ls -ltr   
+      - name: create a directory
+        run:  mkdir testfolder
+      - name: list the folder
+        run:  ls -ltr           
+      
