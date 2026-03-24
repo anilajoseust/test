@@ -13,6 +13,7 @@ jobs:
       - name: Show the location
         run: pwd 
   Job-test:
+    needs: say-hi-job
     runs-on: ubuntu-latest
     steps:
       - name: list the folder
