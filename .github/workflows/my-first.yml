@@ -1,0 +1,10 @@
+name: Hello World Workflow
+
+on: [push]
+
+jobs:
+  say-hi-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hi
+        run: echo "Hello, world!"
