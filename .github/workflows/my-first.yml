@@ -8,3 +8,7 @@ jobs:
     steps:
       - name: Say Hi
         run: echo "Hello, world!"
+      - name: Say List the Files
+        run: ls
+      - name: Show the location
+        run: pwd  
